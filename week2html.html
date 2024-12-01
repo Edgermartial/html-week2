@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Example,video and registration form</title>
+</head>
+
+<body>
+
+    <h1>HTML Audio Example</h1>
+    <p>Click the play button to listen to the audio.</p>
+
+    <!-- Audio element with controls -->
+    <audio controls>
+        <source src="c:\Users\EDGER\Desktop\music\Alan Walker - Alone(MP3_70K) - Copy.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <h2>Video Player</h2>
+    <p>Click the play button to watch the video.</p>
+
+    <video controls>
+        <source src="c:\Users\EDGER\Desktop\music\Mariah_Carey_-_We_Belong_Together_(Official_Music_Video)(360p).mp4"
+            type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    <h1>User Registration Form</h1>
+
+    <form action="/submit" method="POST">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full_name" required maxlength="100"
+            placeholder="Enter your full name"><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8"
+            placeholder="Enter your password"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required min="18" placeholder="Enter your age"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+
+
+</body>
+
+</html>
